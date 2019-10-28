@@ -4,19 +4,21 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class HomePage extends CommonAPI {
-    @FindBy(linkText = "AmazonBasics")
-    WebElement amazonBasics;
+    @FindBy(xpath = "//a[contains(text(),'Customer Service')]")
+    WebElement customerService;
     @FindBy(xpath = "//span[@class='nav-line-2 nav-long-width']")
-    WebElement accountList;
+    WebElement accountAndLists;
 
     public void validateHomePage() {
-        Assert.assertEquals(amazonBasics.isDisplayed(), true, "amazonBasics is not displayed");
+        System.out.println(customerService.isDisplayed());
+        Assert.assertEquals(customerService.isDisplayed(), true, "amazon home page is not displayed");
     }
 
-    public void validateAccountList() {
-        accountList.click();
+    public void clickOnAccountAndLists() {
+        accountAndLists.click();
     }
 
     public void signIn() {

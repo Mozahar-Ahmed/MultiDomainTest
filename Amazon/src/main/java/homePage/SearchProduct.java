@@ -5,7 +5,7 @@ import base.CommonAPI;
 public class SearchProduct extends CommonAPI {
     public void validateSearch() {
         driver.navigate().to("https://www.amazon.com/?ref_=nav_signin&");
-        typeOnElementByXpath("//input[@id='twotabsearchtextbox']", "selenium books");
+        typeOnElementByXpath("//input[@id='twotabsearchtextbox']", "java books");
     }
 
     public void validateSubmitSearch() {

@@ -12,7 +12,7 @@
 
     <test name="Automation tests">
         <classes>
-            <class name="TestHomePagePOM"/>
+            <class name="HomePageFooterTest"/>
         </classes>
     </test>
 </suite>

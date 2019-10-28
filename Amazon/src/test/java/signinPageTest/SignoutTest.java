@@ -1,7 +1,7 @@
-package signinTest;
+package signinPageTest;
 
 import org.testng.annotations.Test;
-import signin.Signout;
+import signinPage.Signout;
 
 public class SignoutTest extends Signout {
     @Test

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class SearchProductTest extends SearchProduct {
     @Test
-    public void testOnbrowsingProducts() {
+    public void testOnSearchProducts() {
         validateSearch();
         validateSubmitSearch();
         validateSearchResult();

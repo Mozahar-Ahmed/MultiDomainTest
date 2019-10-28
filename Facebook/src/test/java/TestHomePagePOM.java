@@ -13,7 +13,7 @@ public class TestHomePagePOM extends CommonAPI {
 
     @Test(enabled = false)
     public void login() {
-        homePagePOM.typeEmailAndPassword("demousser9533@gmai.com", "abcd1234");
+        homePagePOM.typeEmailAndPassword("demousser95@gmail.com", "abcd1234");
         homePagePOM.clickOnLoginButton();
     }
 

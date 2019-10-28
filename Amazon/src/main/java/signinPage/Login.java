@@ -1,13 +1,13 @@
-package signin;
+package signinPage;
 
 import base.CommonAPI;
 
-public class LoginPage extends CommonAPI {
+public class Login extends CommonAPI {
     public void validateLoginField(String value) {
         typeOnElementByXpath("//input[@id='ap_email']", value);
     }
 
-    public void continueButton() {
+    public void validateContinueButton() {
         clickOnElementByXpath("//input[@id='continue']");
     }
 

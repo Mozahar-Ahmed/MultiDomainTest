@@ -1,18 +1,18 @@
-package signin;
+package signinPage;
 
 import base.CommonAPI;
 import homePage.HomePage;
 
 public class Signout extends CommonAPI {
-    LoginPage loginPage = new LoginPage();
+    Login login = new Login();
     HomePage homePage = new HomePage();
 
     public void validateSignOut() {
         homePage.signIn();
-        loginPage.validateLoginField("username");
-        loginPage.continueButton();
-        loginPage.validatePasswordField("password");
-        loginPage.clickOnSignInButton();
+        login.validateLoginField("demouser95");
+        login.validateContinueButton();
+        login.validatePasswordField("abcd1234");
+        login.clickOnSignInButton();
         clickOnElementByXpath("//a[@id='nav-link-accountList']");
         clickOnElementByXpath("//a[@id='nav-item-signout']");
     }

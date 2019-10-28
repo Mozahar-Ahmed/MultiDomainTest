@@ -25,7 +25,7 @@ public class FunctionalityTests extends CommonAPI {
     @Test(enabled = false)
     public void testScrolling() {
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
-        javascriptExecutor.executeScript("window.scrollBy(0,1000)");
+        javascriptExecutor.executeScript("window.scrollBy(0,2000)");
     }
 
     @Test(enabled = false)

@@ -1,10 +1,10 @@
-package signinTest;
+package signinPageTest;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import signin.SigninPOM;
+import signinPage.SigninPOM;
 
 public class SigninPOMTest extends CommonAPI {
     SigninPOM signinPOM;
@@ -43,7 +43,7 @@ public class SigninPOMTest extends CommonAPI {
     }
 
     @Test(enabled = true)
-    public void signinFunctionality() {
+    public void signin() {
         signinPOM.signinFunctionality();
     }
 }

@@ -20,6 +20,7 @@ public class MedicarePlans extends CommonAPI {
 
     public void validateCareProvider() {
         Assert.assertEquals(careProvider.isDisplayed(), true, "care provider is not displayed");
+        Assert.assertEquals(careProvider.isEnabled(), true, "care provider is not enabled");
         careProvider.click();
     }
 

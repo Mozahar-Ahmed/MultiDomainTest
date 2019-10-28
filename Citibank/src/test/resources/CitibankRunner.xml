@@ -12,7 +12,7 @@
 
     <test name="Automation tests">
         <classes>
-            <class name="FunctionalityTests"/>
+            <class name="FooterTest"/>
         </classes>
     </test>
 </suite>

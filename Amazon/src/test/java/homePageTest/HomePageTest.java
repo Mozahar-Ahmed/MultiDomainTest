@@ -14,17 +14,17 @@ public class HomePageTest extends CommonAPI {
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-    @Test
-    public void testOnHomepage() {
+    @Test(enabled = false)
+    public void homepageValidation() {
         homePage.validateHomePage();
     }
 
-    @Test
-    public void testONaccountList() {
-        homePage.validateAccountList();
+    @Test(enabled = false)
+    public void accountButtonValidation() {
+        homePage.clickOnAccountAndLists();
     }
 
-    @Test
+    @Test(enabled = true)
     public void validateSignIN() {
         homePage.signIn();
     }

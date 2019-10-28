@@ -11,17 +11,17 @@ public class MedicarePlanTest extends CommonAPI {
         medicarePlans = PageFactory.initElements(driver, MedicarePlans.class);
     }
 
-    @Test
+    @Test(enabled = false)
     public void testOnGroupPlans() {
         medicarePlans.validateGroupPlans();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testOnCareProvider() {
         medicarePlans.validateCareProvider();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testOnDisplay() {
         medicarePlans.setDisplay();
     }

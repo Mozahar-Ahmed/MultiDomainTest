@@ -11,17 +11,26 @@ public class FooterTest extends CommonAPI {
         Footer = PageFactory.initElements(driver, Footer.class);
     }
 
-    @Test
+    @Test(enabled = false)
+    public void testOnCompanyProfile(){
+        Footer.validateCompanyProfiles();
+    }
+    @Test(enabled = false)
+    public void testOnCareer(){
+        Footer.validateCareer();
+    }
+
+    @Test(enabled = false)
     public void testOnGlossary() {
         Footer.validateglossary();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testOnCignaAccess() {
         Footer.validateCignaAccess();
     }
 
-    @Test
+    @Test(enabled = false)
     public void testOnSupplies() {
         Footer.validateSupplies();
     }

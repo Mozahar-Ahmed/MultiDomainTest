@@ -12,7 +12,7 @@
 
     <test name="Automation tests">
         <classes>
-            <class name="signinTest.SigninPOMTest"/>
+            <class name="homePageTest.DropDownTest"/>
         </classes>
     </test>
 </suite>

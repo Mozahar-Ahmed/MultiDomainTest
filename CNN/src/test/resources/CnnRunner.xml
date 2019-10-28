@@ -12,7 +12,7 @@
 
     <test name="Automation tests">
         <classes>
-            <class name="homePageTest.HomePageTest"/>
+            <class name="PageFactoryHomePageTest"/>
         </classes>
     </test>
 </suite>
